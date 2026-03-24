@@ -18,9 +18,9 @@ this protocols is for ensure that the packets are sent and received correctly.
 
 - Internet Protocol (IP): Responsible for routing packets for their correct destination.
 - Transmission Control Protocol (TCP): Responsible for ensure that the packet are transmitted reliably and in the correct order.
-- Domain Name System (DNS): 
-- Hypertext Transfer Protocol (HTTP):
-- HTTP Secure (HTTPS):
+- Domain Name System (DNS): **SOON**
+- (Hypertext Transfer Protocol (HTTP))[../protocols/http.md]: Responsible for make the communication between the client (browser) and the server.
+- HTTP Secure (HTTPS): **SOON**
 - Secure Sockets Layer/Transport Layer Secure (SSL/TLS):
 
 ## Basic Concepts and Terminology
