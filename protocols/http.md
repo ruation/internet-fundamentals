@@ -29,7 +29,7 @@ The HTTP especification is maintained by W3C (World-wide Web Consortiium) and av
 - HTTP/1.0 (1996) - improved the older by allowing MIME-like messages.
 - HTTP/1.1 (1999) - adress the issues of proxies, caching, persistent connection, virtual hosts and range download.
 
-## HTTP Request and Response Messages
+## HTTP Messages
 
 HTTP client and server communicate by sending text messages. The client sends a request message to the server. The server, in turnm returns a response message.
 
@@ -46,24 +46,34 @@ bbbbbbbbbbbbbbb |
 **HTTP Messages**
 ```
 
-The format of an HTTP request message is as follow:
+ **Request message (from your browser to the server):**
 
 ```
-Request Line    <   hhhhhhhhhhhhhhh |
-                  | hhhhhhhhhhhhhhh | ➡️ Request Message Header
-Request Headers < | hhhhhhhhhhhhhhh |
-                                      ➡️ Separated by a blank line
-                    bbbbbbbbbbbbbbb |
-                    bbbbbbbbbbbbbbb |
-                    bbbbbbbbbbbbbbb | ➡️ Request Message Body (optional)
-                    bbbbbbbbbbbbbbb |
-                    bbbbbbbbbbbbbbb |
-                    **HTTP Request Message**
+ GET /doc/test.html1 HTTP/1.0         ← Request Line       |
+ Host: www.test10.com                 |                    |
+ Accept: image/gif, image/jpeg, */*   |                    |  Request
+ Accept-Language: en-us               |- Request Headers   |- Message
+ Accept-Encoding? gzip, deflate       |                    |  Header
+ User-Agent: Mozilla/4.0              |                    |
+ Content-Length: 45                   |                    |
+                                      ← A blank line separates header and body
+ bookId=54321&author=Ru+Ã+N           ← Request Message Body
+ ```
+
+**HTTP Response Message:**
+
+```
+HTTP/1.1 200 OK                      ← Status Line         |
+Date: Sun, 10 Aug xxxx 09:32:11 GMT  |                     |
+Server: Apache/1.3.29 (Win32)        |                     |  Response
+Last-Modified: Sun, 10 Aug xxxx      |                     |  Message
+Etag: "0-26-1008r10l9"               |- Response Headers   |- Header
+Accept-Ranges: bytes                 |                     |
+Content-Length: 45                   |                     |
+Connection: open                     |                     |
+Content-Type: text/html              |                     |
+                                     ← A blank line separates header and body
+<h1>My github repository</h1>        ← Response Message Body
 ```
 
-## Request Line
-
-The first line of the header is called the request line, followed by optinional request headers.
-
-The request line has the following syntax:
-```request-method-name request-URI HTTP-version```
+## Request Methods
