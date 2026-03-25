@@ -66,7 +66,7 @@ bbbbbbbbbbbbbbb |
 HTTP/1.1 200 OK                      ← Status Line         |
 Date: Sun, 10 Aug xxxx 09:32:11 GMT  |                     |
 Server: Apache/1.3.29 (Win32)        |                     |  Response
-Last-Modified: Sun, 10 Aug xxxx      |                     |  Message
+Last-Modified: Sun, 10 Aug xxxx       |                     |  Message
 Etag: "0-26-1008r10l9"               |- Response Headers   |- Header
 Accept-Ranges: bytes                 |                     |
 Content-Length: 45                   |                     |
@@ -77,3 +77,11 @@ Content-Type: text/html              |                     |
 ```
 
 ## Request Methods
+
+- **GET**: A client can use the GET request to get a web resource from the server.
+- **HEAD**: A client can use the HEAD request to get the header that a GET request would have obtained. Since the header contains the last-modified date of the data, this can be used to check against the local cache copy.
+- **POST**: Used to post data up to the web server.
+- **DELETE**: Ask the server to delete the data.
+- **TRACE**: Ask the server to return a diagnostic trace of the actions it takes.
+- **OPTIONS**: Ask the server to return the list of request methods it supports.
+- **CONNECT**: Used to tell a proxy to make a connection to another host and simply reply the content, without attempting to parse or cache it. This is often used to make SSL connection through the proxy.
