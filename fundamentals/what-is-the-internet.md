@@ -1,31 +1,36 @@
-# The internet - Basic concept
+# The Internet - Basic Concepts
 
 ## Network
 
-First of all, we need to know what a network is. A network is a group of computers or devices which are connected with each other. Like a web, that every node is connected with another one. And that makes every node connected with every node.
+First of all, we need to understand what a network is. A network is a group of computers or devices that are connected to each other.
 
-- **the internet is a network of networks.**
+You can think of it like a web, where nodes are connected. However, not every node is directly connected to every other node.
 
-The core of the internet is a global network of interconnected routers, which are responsible for directing traffic between diferents devices and systems. When you send data over the internet, it is broken up into small packets that are sent from your device to a router. The router examines the packet and forwads it to the next router in the path towards destination. This process continues until the packet reached its final destination.
+- **The Internet is a network of networks.**
 
-## browsers
+At its core, the Internet is a global system of interconnected routers. These routers are responsible for directing traffic between different devices and networks.
+
+When you send data over the Internet, it is broken into small pieces called packets. These packets travel from your device through multiple routers until they reach their destination.
+
+Each router examines the packet and forwards it to the next router along the path. This process continues until the packet reaches its final destination.
+
+## Browsers
 
 **SOON**
 
 ## Protocols
 
-this protocols is for ensure that the packets are sent and received correctly.
+Protocols are rules that ensure data is sent and received correctly over the network.
 
-- Internet Protocol (IP): Responsible for routing packets for their correct destination.
-- Transmission Control Protocol (TCP): Responsible for ensure that the packet are transmitted reliably and in the correct order.
-- Domain Name System (DNS): **SOON**
-- [Hypertext Transfer Protocol (HTTP)](../protocols/http.md): Responsible for make the communication between the client (browser) and the server.
-- HTTP Secure (HTTPS): **SOON**
-- Secure Sockets Layer/Transport Layer Secure (SSL/TLS):
+- **Internet Protocol (IP):** Responsible for addressing and routing packets to their destination.
+- **Transmission Control Protocol (TCP):** Ensures that packets are delivered reliably and in the correct order.
+- **Domain Name System (DNS):** **SOON**
+- [**Hypertext Transfer Protocol (HTTP)**](../protocols/http.md): Responsible for communication between the client (browser) and the server.
+- **HTTP Secure (HTTPS):** **SOON**
+- **SSL/TLS:** Provides security through encryption.
 
 ## Basic Concepts and Terminology
 
-- **Packet**: A small unit of data that is transmitted over the internet
-- **Router**: A device that directs packets of data between different networks.
-- **Domain Name**:  A human-readable name that is used to identifier a website, such a github.com
-
+- **Packet:** A small unit of data transmitted over the Internet.
+- **Router:** A device that forwards data between networks.
+- **Domain Name:** A human-readable name used to identify a website, such as `github.com`.
