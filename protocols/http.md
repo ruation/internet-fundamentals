@@ -35,8 +35,7 @@ HTTP client and server communicate by sending text messages. The client sends a 
 
 An HTTP message consists of a message header and an optional message body, separated by a blank line, as illustrated below:
 
-```
-hhhhhhhhhhhhhhh |
+'''hhhhhhhhhhhhhhh |
 hhhhhhhhhhhhhhh | ➡️ Message Header
 hhhhhhhhhhhhhhh |
                   ➡️ A blank line separates the header and body
@@ -45,9 +44,11 @@ bbbbbbbbbbbbbbb |
 bbbbbbbbbbbbbbb | ➡️ Message Body (optional)
 bbbbbbbbbbbbbbb |
 **HTTP Messages**
+'''
 
 The format of an HTTP request message is as follow:
 
+'''
 Request Line    <   hhhhhhhhhhhhhhh |
                   | hhhhhhhhhhhhhhh | ➡️ Request Message Header
 Request Headers < | hhhhhhhhhhhhhhh |
@@ -57,5 +58,11 @@ Request Headers < | hhhhhhhhhhhhhhh |
                     bbbbbbbbbbbbbbb | ➡️ Request Message Body (optional)
                     bbbbbbbbbbbbbbb |
                     bbbbbbbbbbbbbbb |
-                    **HTTP Request Message**
-```
+                    **HTTP Request Message**'''
+
+## Request Line
+
+The first line of the header is called the request line, followed by optinional request headers.
+
+The request line has the following syntax:
+'''request-method-name request-URI HTTP-version'''
