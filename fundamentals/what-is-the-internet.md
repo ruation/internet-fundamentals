@@ -16,7 +16,10 @@ Each router examines the packet and forwards it to the next router along the pat
 
 ## Browsers
 
-**SOON**
+
+A [**web browser**](browsers.md) is an application that allows users to access and interact with websites on the Internet. Examples of popular browsers include **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**, and **Safari**.
+
+Browsers act as a bridge between the user and the web. They request resources from web servers and display them in a human-readable format.
 
 ## Protocols
 
@@ -24,9 +27,8 @@ Protocols are rules that ensure data is sent and received correctly over the net
 
 - **Internet Protocol (IP):** Responsible for addressing and routing packets to their destination.
 - **Transmission Control Protocol (TCP):** Ensures that packets are delivered reliably and in the correct order.
-- **Domain Name System (DNS):** **SOON**
+- [**Domain Name System (DNS):**](../protocols/dns.md): The "phonebook of the Internet", that translates URL into IP Adress.
 - [**Hypertext Transfer Protocol (HTTP)**](../protocols/http.md): Responsible for communication between the client (browser) and the server.
-- **HTTP Secure (HTTPS):** **SOON**
 - **SSL/TLS:** Provides security through encryption.
 
 ## Basic Concepts and Terminology
